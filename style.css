@@ -1,18 +1,15 @@
 :root{
   --bg:#050505;
-  --panel:#111;
-  --panel2:#171717;
-  --line:rgba(255,255,255,.10);
+  --panel:#111111;
+  --line:rgba(255,255,255,.08);
 
-  --text:#fff;
+  --text:#ffffff;
   --muted:rgba(255,255,255,.72);
 
   --red:#e34232;
   --gold:#f0ae54;
   --green:#58c263;
   --blue:#5d8df7;
-
-  --shadow:0 26px 80px rgba(0,0,0,.55);
 }
 
 *{
@@ -21,13 +18,13 @@
 
 body{
   margin:0;
-  background:var(--bg);
-  color:var(--text);
+  background:#050505;
+  color:white;
   font-family:Inter,Arial,sans-serif;
 }
 
 .container{
-  width:min(1500px,92%);
+  width:min(1400px,92%);
   margin:auto;
 }
 
@@ -36,9 +33,9 @@ body{
 ========================= */
 
 .topbar{
-  height:94px;
+  height:92px;
 
-  background:rgba(0,0,0,.94);
+  background:rgba(0,0,0,.96);
 
   border-bottom:1px solid var(--line);
 
@@ -46,74 +43,66 @@ body{
   top:0;
   z-index:100;
 
-  backdrop-filter:blur(16px);
+  backdrop-filter:blur(12px);
 }
 
 .nav{
-  height:94px;
+  height:92px;
 
   display:flex;
   align-items:center;
   justify-content:space-between;
-
-  gap:28px;
 }
 
 .brand{
   display:flex;
   align-items:center;
-  gap:16px;
+  gap:14px;
 
-  color:white;
   text-decoration:none;
 
-  min-width:310px;
+  color:white;
 }
 
 .brand img{
-  width:100px;
-  height:74px;
-
-  object-fit:contain;
+  width:90px;
 }
 
 .brand small{
-  font-family:Georgia,serif;
-  font-size:17px;
-
   display:block;
+
+  font-size:15px;
 
   line-height:.9;
 }
 
 .brand strong{
-  font-family:Cinzel,serif;
-
-  font-size:34px;
-
   display:block;
 
-  line-height:.86;
+  font-family:Cinzel,serif;
+
+  font-size:32px;
+
+  line-height:.85;
 }
 
 .brand em{
-  font-family:Cinzel,serif;
-
-  font-style:normal;
+  display:block;
 
   color:var(--red);
 
-  font-size:21px;
+  font-style:normal;
+
+  font-family:Cinzel,serif;
+
+  font-size:18px;
 
   letter-spacing:.08em;
-
-  display:block;
 }
 
 nav{
   display:flex;
   gap:34px;
-  align-items:center;
 }
 
 nav a{
@@ -121,15 +110,15 @@ nav a{
 
   text-decoration:none;
 
-  font-weight:900;
-
   font-size:14px;
+
+  font-weight:900;
 
   letter-spacing:.03em;
 
-  padding:38px 0;
-
   position:relative;
+
+  padding:36px 0;
 }
 
 nav a.active,
@@ -137,28 +126,28 @@ nav a:hover{
   color:var(--red);
 }
 
-nav a.active:after{
+nav a.active::after{
   content:"";
-
-  height:2px;
-
-  background:var(--red);
 
   position:absolute;
 
   left:0;
   right:0;
   bottom:0;
+
+  height:2px;
+
+  background:var(--red);
 }
 
 .theme-toggle{
   background:#0d0d0d;
 
-  color:white;
-
   border:1px solid var(--line);
 
   border-radius:999px;
+
+  color:white;
 
   padding:12px 18px;
 
@@ -170,16 +159,16 @@ nav a.active:after{
 ========================= */
 
 .hero{
-  min-height:690px;
+  min-height:560px;
 
   background:
 
   linear-gradient(
     to right,
-    rgba(0,0,0,1) 0%,
-    rgba(0,0,0,.94) 28%,
-    rgba(0,0,0,.55) 48%,
-    rgba(0,0,0,.15) 70%,
+    rgba(0,0,0,.98) 0%,
+    rgba(0,0,0,.92) 30%,
+    rgba(0,0,0,.52) 52%,
+    rgba(0,0,0,.15) 75%,
     rgba(0,0,0,.05) 100%
   ),
 
@@ -191,18 +180,23 @@ nav a.active:after{
 
   url('imagens/hero-pizza.jpg');
 
-  background-size:cover;
+  background-size:115%;
 
-  background-position:center right -20px;
+  background-repeat:no-repeat;
+
+  background-position:center right -140px;
 
   display:flex;
+
   align-items:center;
 
   overflow:hidden;
 }
 
 .hero-copy{
-  max-width:620px;
+  max-width:520px;
+
+  padding-top:10px;
 }
 
 .eyebrow{
@@ -212,23 +206,23 @@ nav a.active:after{
 
   font-weight:900;
 
-  font-size:15px;
+  font-size:14px;
 
-  margin:0 0 24px;
+  margin:0 0 22px;
 }
 
 .hero h1{
   font-family:Cinzel,serif;
 
-  font-size:clamp(38px,4.8vw,68px);
+  font-size:58px;
 
-  line-height:.92;
+  line-height:.88;
 
   text-transform:uppercase;
 
   margin:0;
 
-  letter-spacing:-0.02em;
+  letter-spacing:-0.03em;
 }
 
 .hero h1 span{
@@ -238,25 +232,23 @@ nav a.active:after{
 }
 
 .lead{
-  font-size:20px;
+  font-size:19px;
 
   line-height:1.55;
 
-  color:#e7e7e7;
+  color:#e5e5e5;
 
-  margin-top:28px;
-
-  max-width:600px;
+  margin-top:24px;
 }
 
 .actions{
   display:flex;
 
-  gap:18px;
+  gap:16px;
 
   flex-wrap:wrap;
 
-  margin-top:34px;
+  margin-top:30px;
 }
 
 .btn{
@@ -265,15 +257,13 @@ nav a.active:after{
   align-items:center;
   justify-content:center;
 
-  text-decoration:none;
+  padding:16px 26px;
 
   border-radius:10px;
 
-  padding:17px 28px;
+  text-decoration:none;
 
   font-weight:900;
-
-  border:1px solid transparent;
 
   color:white;
 }
@@ -287,55 +277,55 @@ nav a.active:after{
 }
 
 .btn-outline{
-  border-color:rgba(227,66,50,.8);
+  border:1px solid rgba(227,66,50,.8);
 
-  background:rgba(0,0,0,.32);
+  background:rgba(0,0,0,.30);
 }
 
 /* =========================
-   QUICK MENU
+   MENU BOX
 ========================= */
 
 .quick-strip{
-  margin-top:-55px;
+  margin-top:-45px;
 
   position:relative;
 
-  z-index:4;
+  z-index:5;
 
   display:grid;
 
   grid-template-columns:repeat(4,1fr);
-
-  background:linear-gradient(
-    180deg,
-    rgba(24,24,24,.96),
-    rgba(10,10,10,.96)
-  );
 
   border:1px solid var(--line);
 
   border-radius:12px;
 
   overflow:hidden;
+
+  background:linear-gradient(
+    180deg,
+    rgba(22,22,22,.96),
+    rgba(8,8,8,.96)
+  );
 }
 
 .quick-strip a{
   display:grid;
 
-  grid-template-columns:62px 1fr;
+  grid-template-columns:55px 1fr;
 
   grid-template-rows:auto auto;
+
+  column-gap:14px;
+
+  padding:22px 28px;
 
   text-decoration:none;
 
   color:white;
 
-  padding:24px 34px;
-
   border-right:1px solid var(--line);
-
-  column-gap:16px;
 }
 
 .quick-strip a:last-child{
@@ -345,7 +335,7 @@ nav a.active:after{
 .quick-strip span{
   grid-row:1/3;
 
-  font-size:38px;
+  font-size:34px;
 
   color:var(--gold);
 }
@@ -353,7 +343,7 @@ nav a.active:after{
 .quick-strip strong{
   color:var(--gold);
 
-  font-size:17px;
+  font-size:16px;
 }
 
 .quick-strip em{
@@ -369,24 +359,24 @@ nav a.active:after{
 ========================= */
 
 .dashboard{
-  margin-top:24px;
+  margin-top:22px;
 
   display:grid;
 
   grid-template-columns:
   1.3fr
-  1.05fr
+  1fr
   .9fr
   .9fr;
 
-  gap:20px;
+  gap:18px;
 }
 
 .card{
   background:linear-gradient(
     145deg,
-    rgba(23,23,23,.96),
-    rgba(7,7,7,.96)
+    rgba(18,18,18,.96),
+    rgba(6,6,6,.96)
   );
 
   border:1px solid var(--line);
@@ -395,11 +385,11 @@ nav a.active:after{
 }
 
 .recipe-card{
-  padding:28px;
+  padding:24px;
 
   display:grid;
 
-  grid-template-columns:1fr 190px;
+  grid-template-columns:1fr 160px;
 
   gap:18px;
 
@@ -407,9 +397,9 @@ nav a.active:after{
 }
 
 .recipe-card img{
-  width:225px;
+  width:190px;
 
-  height:260px;
+  height:220px;
 
   object-fit:cover;
 
@@ -417,7 +407,7 @@ nav a.active:after{
 
   align-self:end;
 
-  margin-right:-82px;
+  margin-right:-70px;
 }
 
 .tag{
@@ -425,7 +415,7 @@ nav a.active:after{
 
   letter-spacing:.08em;
 
-  margin:0 0 18px;
+  margin:0 0 16px;
 }
 
 .red{
@@ -447,27 +437,27 @@ nav a.active:after{
 .card h2{
   font-family:Georgia,serif;
 
-  font-size:31px;
+  font-size:28px;
 
-  line-height:1.1;
+  line-height:1.05;
 
-  margin:0 0 16px;
+  margin:0 0 14px;
 }
 
 .card p{
   color:var(--muted);
 
-  line-height:1.55;
+  line-height:1.5;
 }
 
 .link{
-  text-decoration:none;
-
-  font-weight:900;
+  display:inline-block;
 
   margin-top:18px;
 
-  display:inline-block;
+  text-decoration:none;
+
+  font-weight:900;
 }
 
 .red-link{
@@ -488,7 +478,7 @@ nav a.active:after{
 
 .ranking-card,
 .tool-card{
-  padding:28px;
+  padding:24px;
 }
 
 .ranking-card ol{
@@ -500,23 +490,23 @@ nav a.active:after{
 
   grid-template-columns:1fr auto;
 
-  gap:18px;
+  gap:16px;
 
-  margin:14px 0;
+  margin:12px 0;
 }
 
 .big-icon{
-  width:64px;
-  height:64px;
+  width:58px;
+  height:58px;
 
-  border-radius:16px;
+  border-radius:14px;
 
   display:grid;
   place-items:center;
 
-  font-size:36px;
+  font-size:32px;
 
-  margin:18px 0;
+  margin:16px 0;
 }
 
 .green-bg{
@@ -534,16 +524,16 @@ nav a.active:after{
 .bottom-grid{
   display:grid;
 
-  grid-template-columns:2.3fr 1fr;
+  grid-template-columns:2.2fr 1fr;
 
-  gap:20px;
+  gap:18px;
 
-  margin-top:20px;
+  margin-top:18px;
 }
 
 .gallery-card,
 .lema-card{
-  padding:26px;
+  padding:24px;
 }
 
 .section-head{
@@ -557,7 +547,7 @@ nav a.active:after{
 .section-head h2{
   color:var(--gold);
 
-  font-size:18px;
+  font-size:16px;
 }
 
 .section-head a{
@@ -573,15 +563,15 @@ nav a.active:after{
 
   grid-template-columns:repeat(4,1fr);
 
-  gap:14px;
+  gap:12px;
 
-  margin-top:22px;
+  margin-top:18px;
 }
 
 .mini-gallery img{
   width:100%;
 
-  height:130px;
+  height:120px;
 
   object-fit:cover;
 
@@ -591,15 +581,15 @@ nav a.active:after{
 .lema-card blockquote{
   font-family:Georgia,serif;
 
-  font-size:27px;
+  font-size:24px;
 
-  line-height:1.32;
+  line-height:1.3;
 
-  margin:20px 0;
+  margin:18px 0;
 }
 
 .pizza-icon{
-  font-size:62px;
+  font-size:52px;
 
   text-align:right;
 }
@@ -611,9 +601,9 @@ nav a.active:after{
 .footer{
   border-top:1px solid var(--line);
 
-  padding:28px 0;
+  margin-top:50px;
 
-  margin-top:60px;
+  padding:24px 0;
 
   color:var(--muted);
 }
@@ -635,7 +625,7 @@ nav a.active:after{
 }
 
 .footer-brand img{
-  width:54px;
+  width:50px;
 }
 
 /* =========================
@@ -661,23 +651,21 @@ nav a.active:after{
 @media(max-width:760px){
 
   .hero{
-    min-height:620px;
+    min-height:540px;
 
-    background-position:center right -180px;
+    background-position:center right -220px;
 
-    padding:80px 0;
-  }
+    background-size:cover;
 
-  .hero-copy{
-    max-width:100%;
+    padding:70px 0;
   }
 
   .hero h1{
-    font-size:46px;
+    font-size:44px;
   }
 
   .lead{
-    font-size:18px;
+    font-size:17px;
   }
 
   .quick-strip,
@@ -693,7 +681,7 @@ nav a.active:after{
   .recipe-card img{
     width:100%;
 
-    height:230px;
+    height:220px;
 
     border-radius:12px;
 
