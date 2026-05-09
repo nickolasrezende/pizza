@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<title>Clube da Pizza Napolitana</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700;800;900&family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="container nav">
+    <a class="brand" href="index.html">
+      <img src="imagens/logo-forno.png" alt="Logo forno">
+      <span>
+        <small>Clube da</small>
+        <strong>PIZZA</strong>
+        <em>NAPOLITANA</em>
+      </span>
+    </a>
+
+    <button class="menu-btn" id="menuBtn">☰</button>
+
+    <nav id="mainNav">
+      <a class="active" href="index.html">INÍCIO</a>
+      <a href="receitas.html">RECEITAS</a>
+      <a href="farinhas.html">FARINHAS</a>
+      <a href="calculadora.html">CALCULADORA</a>
+      <a href="timer.html">TIMER</a>
+      <a href="galeria.html">GALERIA</a>
+      <a href="sobre.html">SOBRE</a>
+    </nav>
+
+    <button class="theme-toggle">🌙 MODO ESCURO</button>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="container hero-content">
+      <div class="hero-copy">
+        <p class="eyebrow">MASSA • FORNO • FERMENTAÇÃO • AMIGOS</p>
+        <h1>PIZZA NAPOLITANA <span>SEM ENROLAÇÃO.</span></h1>
+        <p class="lead">Receitas, testes de farinha, hidratação, fermentação e dicas para evoluir a pizza no forno de casa ou no forno de alta temperatura.</p>
+
+        <div class="actions">
+          <a class="btn btn-red" href="receitas.html">📖 VER RECEITAS</a>
+          <a class="btn btn-outline" href="calculadora.html">🧮 CALCULAR MASSA</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="container quick-strip">
+    <a href="farinhas.html"><span>🌾</span><strong>FARINHAS</strong><em>Testes e ranking</em></a>
+    <a href="receitas.html"><span>🍜</span><strong>RECEITAS</strong><em>Organizadas por tipo</em></a>
+    <a href="calculadora.html"><span>🧮</span><strong>FERRAMENTAS</strong><em>Calculadora e timer</em></a>
+    <a href="sobre.html"><span>🔥</span><strong>COMUNIDADE</strong><em>Amigos e pizza</em></a>
+  </section>
+
+  <section class="container dashboard">
+    <article class="card recipe-card">
+      <div>
+        <p class="tag red">ÚLTIMA RECEITA</p>
+        <h2>Pizza Napolitana 65% de Hidratação</h2>
+        <p>Receita base para napolitana contemporânea com borda leve, massa elástica e fermentação controlada.</p>
+        <a class="link red-link" href="receitas.html">VER RECEITA →</a>
+      </div>
+      <img src="imagens/pizza1.jpg" alt="Pizza napolitana">
+    </article>
+
+    <article class="card ranking-card">
+      <p class="tag gold">RANKING DE FARINHAS</p>
+      <ol>
+        <li><span>Caputo Nuvola</span><strong>95/100</strong></li>
+        <li><span>Caputo Pizzeria</span><strong>92/100</strong></li>
+        <li><span>Petra 5037</span><strong>90/100</strong></li>
+        <li><span>Dallagiovanna W280</span><strong>87/100</strong></li>
+        <li><span>Anaconda Premium</span><strong>85/100</strong></li>
+      </ol>
+      <a class="link gold-link" href="farinhas.html">VER RANKING COMPLETO →</a>
+    </article>
+
+    <article class="card tool-card">
+      <p class="tag green">CALCULADORA DE MASSA</p>
+      <div class="big-icon green-bg">🧮</div>
+      <p>Calcule hidratação, ingredientes e peso final da massa com precisão.</p>
+      <a class="link green-link" href="calculadora.html">ABRIR CALCULADORA →</a>
+    </article>
+
+    <article class="card tool-card">
+      <p class="tag blue">TIMER DE FERMENTAÇÃO</p>
+      <div class="big-icon blue-bg">🕒</div>
+      <p>Cronômetros para controlar fermentação de massa e bolas.</p>
+      <a class="link blue-link" href="timer.html">ABRIR TIMER →</a>
+    </article>
+  </section>
+
+  <section class="container bottom-grid">
+    <article class="card gallery-card">
+      <div class="section-head">
+        <h2>GALERIA DO CLUBE</h2>
+        <a href="galeria.html">VER GALERIA COMPLETA →</a>
+      </div>
+      <div class="mini-gallery">
+        <img src="imagens/pizza2.jpg" alt="">
+        <img src="imagens/pizza3.jpg" alt="">
+        <img src="imagens/pizza4.jpg" alt="">
+        <img src="imagens/pizza5.jpg" alt="">
+      </div>
+    </article>
+
+    <article class="card lema-card">
+      <p class="tag red">NOSSO LEMA</p>
+      <blockquote>Fazer pizza é compartilhar tempo, conhecimento e boas histórias.</blockquote>
+      <div class="pizza-icon">🍕</div>
+    </article>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container footer-inner">
+    <div class="footer-brand">
+      <img src="imagens/logo-forno.png" alt="">
+      <span>
+        <strong>CLUBE DA PIZZA NAPOLITANA</strong>
+        <p>Massas melhores. Amigos para sempre.</p>
+      </span>
+    </div>
+    <p>Feito com ❤️ e muita farinha</p>
+  </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
