@@ -1,11 +1,19 @@
-<!DOCTYPE html><html lang="pt-BR"><head><title>Sobre</title><meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700;800;900&family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css"></head><body><header class="topbar">
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sobre | Clube da Pizza</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800;900&family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="topbar">
   <div class="container nav">
-    <a class="brand" href="index.html">
+    <a class="brand" href="index.html" aria-label="Clube da Pizza Napolitana">
       <img src="imagens/logo-forno.png" alt="Logo forno">
       <span>
         <small>Clube da</small>
@@ -14,10 +22,10 @@
       </span>
     </a>
 
-    <button class="menu-btn" id="menuBtn">☰</button>
+    <button class="menu-btn" id="menuBtn" aria-label="Abrir menu">☰</button>
 
     <nav id="mainNav">
-      <a class="active" href="index.html">INÍCIO</a>
+      <a href="index.html">INÍCIO</a>
       <a href="receitas.html">RECEITAS</a>
       <a href="farinhas.html">FARINHAS</a>
       <a href="calculadora.html">CALCULADORA</a>
@@ -26,26 +34,36 @@
       <a href="sobre.html">SOBRE</a>
     </nav>
 
-    <button class="theme-toggle">🌙 MODO ESCURO</button>
+    <button id="themeToggle" class="theme-toggle"><span>🌙</span> MODO ESCURO</button>
   </div>
 </header>
+
+
 <main class="container page">
-  <p class="eyebrow">SOBRE</p>
-  <h1 class="page-title">O Clube da Pizza Napolitana</h1>
+  <div class="page-title">
+    <p class="eyebrow">SOBRE</p>
+    <h1>O clube</h1>
+    <p>Um grupo de amigos testando massa, farinha, forno e fermentação. Errou, anota. Acertou, repete. Simples assim.</p>
+  </div>
+
   <section class="card about-card">
-    <h2>Sem enrolação.</h2>
-    <p>Um grupo de amigos testando massa, farinha, forno e fermentação. Errou, anota. Acertou, repete.</p>
+    <h2>Nosso lema</h2>
+    <p>Fazer pizza é compartilhar tempo, conhecimento e boas histórias.</p>
   </section>
-</main><footer class="footer">
+</main>
+
+<footer class="footer">
   <div class="container footer-inner">
     <div class="footer-brand">
       <img src="imagens/logo-forno.png" alt="">
-      <span>
+      <div>
         <strong>CLUBE DA PIZZA NAPOLITANA</strong>
         <p>Massas melhores. Amigos para sempre.</p>
-      </span>
+      </div>
     </div>
     <p>Feito com ❤️ e muita farinha</p>
   </div>
 </footer>
-<script src="script.js"></script></body></html>
+<script src="script.js"></script>
+</body>
+</html>

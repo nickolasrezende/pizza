@@ -1,11 +1,19 @@
-<!DOCTYPE html><html lang="pt-BR"><head><title>Farinhas</title><meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700;800;900&family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css"></head><body><header class="topbar">
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Farinhas | Clube da Pizza</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800;900&family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="topbar">
   <div class="container nav">
-    <a class="brand" href="index.html">
+    <a class="brand" href="index.html" aria-label="Clube da Pizza Napolitana">
       <img src="imagens/logo-forno.png" alt="Logo forno">
       <span>
         <small>Clube da</small>
@@ -14,10 +22,10 @@
       </span>
     </a>
 
-    <button class="menu-btn" id="menuBtn">☰</button>
+    <button class="menu-btn" id="menuBtn" aria-label="Abrir menu">☰</button>
 
     <nav id="mainNav">
-      <a class="active" href="index.html">INÍCIO</a>
+      <a href="index.html">INÍCIO</a>
       <a href="receitas.html">RECEITAS</a>
       <a href="farinhas.html">FARINHAS</a>
       <a href="calculadora.html">CALCULADORA</a>
@@ -26,29 +34,44 @@
       <a href="sobre.html">SOBRE</a>
     </nav>
 
-    <button class="theme-toggle">🌙 MODO ESCURO</button>
+    <button id="themeToggle" class="theme-toggle"><span>🌙</span> MODO ESCURO</button>
   </div>
 </header>
+
+
 <main class="container page">
-  <p class="eyebrow">TESTES DO CLUBE</p>
-  <h1 class="page-title">Ranking de farinhas</h1>
-  <section class="card table-card"><table><thead><tr><th>#</th><th>Farinha</th><th>Uso ideal</th><th>Nota</th></tr></thead><tbody>
-  <tr><td>1</td><td>Caputo Nuvola</td><td>Napolitana contemporânea</td><td>95/100</td></tr>
-  <tr><td>2</td><td>Caputo Pizzeria</td><td>Napolitana clássica</td><td>92/100</td></tr>
-  <tr><td>3</td><td>Petra 5037</td><td>Fermentação longa</td><td>90/100</td></tr>
-  <tr><td>4</td><td>Dallagiovanna W280</td><td>Uso geral premium</td><td>87/100</td></tr>
-  <tr><td>5</td><td>Anaconda Premium</td><td>Custo-benefício</td><td>85/100</td></tr>
-  </tbody></table></section>
-</main><footer class="footer">
+  <div class="page-title">
+    <p class="eyebrow">TESTES DO CLUBE</p>
+    <h1>Ranking de farinhas</h1>
+    <p>Notas internas. Teste no seu forno antes de virar fiscal de glúten.</p>
+  </div>
+
+  <section class="card table-card">
+    <table>
+      <thead><tr><th>#</th><th>Farinha</th><th>Uso ideal</th><th>Nota</th></tr></thead>
+      <tbody>
+        <tr><td>1</td><td>Caputo Nuvola</td><td>Napolitana contemporânea</td><td>95/100</td></tr>
+        <tr><td>2</td><td>Caputo Pizzeria</td><td>Napolitana clássica</td><td>92/100</td></tr>
+        <tr><td>3</td><td>Petra 5037</td><td>Fermentação longa</td><td>90/100</td></tr>
+        <tr><td>4</td><td>Dallagiovanna W280</td><td>Uso geral premium</td><td>87/100</td></tr>
+        <tr><td>5</td><td>Anaconda Premium</td><td>Custo-benefício</td><td>85/100</td></tr>
+      </tbody>
+    </table>
+  </section>
+</main>
+
+<footer class="footer">
   <div class="container footer-inner">
     <div class="footer-brand">
       <img src="imagens/logo-forno.png" alt="">
-      <span>
+      <div>
         <strong>CLUBE DA PIZZA NAPOLITANA</strong>
         <p>Massas melhores. Amigos para sempre.</p>
-      </span>
+      </div>
     </div>
     <p>Feito com ❤️ e muita farinha</p>
   </div>
 </footer>
-<script src="script.js"></script></body></html>
+<script src="script.js"></script>
+</body>
+</html>

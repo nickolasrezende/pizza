@@ -1,18 +1,19 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-BR" data-theme="dark">
 <head>
-<title>Clube da Pizza Napolitana</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700;800;900&family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clube da Pizza Napolitana</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800;900&family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
 <header class="topbar">
   <div class="container nav">
-    <a class="brand" href="index.html">
+    <a class="brand" href="index.html" aria-label="Clube da Pizza Napolitana">
       <img src="imagens/logo-forno.png" alt="Logo forno">
       <span>
         <small>Clube da</small>
@@ -21,10 +22,10 @@
       </span>
     </a>
 
-    <button class="menu-btn" id="menuBtn">☰</button>
+    <button class="menu-btn" id="menuBtn" aria-label="Abrir menu">☰</button>
 
     <nav id="mainNav">
-      <a class="active" href="index.html">INÍCIO</a>
+      <a href="index.html">INÍCIO</a>
       <a href="receitas.html">RECEITAS</a>
       <a href="farinhas.html">FARINHAS</a>
       <a href="calculadora.html">CALCULADORA</a>
@@ -33,21 +34,29 @@
       <a href="sobre.html">SOBRE</a>
     </nav>
 
-    <button class="theme-toggle">🌙 MODO ESCURO</button>
+    <button id="themeToggle" class="theme-toggle"><span>🌙</span> MODO ESCURO</button>
   </div>
 </header>
 
+
 <main>
   <section class="hero">
-    <div class="container hero-content">
+    <div class="hero-bg"></div>
+    <div class="container hero-wrap">
       <div class="hero-copy">
         <p class="eyebrow">MASSA • FORNO • FERMENTAÇÃO • AMIGOS</p>
-        <h1>PIZZA NAPOLITANA <span>SEM ENROLAÇÃO.</span></h1>
+        <h1>Pizza napolitana <span>sem enrolação.</span></h1>
         <p class="lead">Receitas, testes de farinha, hidratação, fermentação e dicas para evoluir a pizza no forno de casa ou no forno de alta temperatura.</p>
-
         <div class="actions">
           <a class="btn btn-red" href="receitas.html">📖 VER RECEITAS</a>
           <a class="btn btn-outline" href="calculadora.html">🧮 CALCULAR MASSA</a>
+        </div>
+
+        <div class="hero-icons">
+          <div>🌿<span>Ingredientes<br>de qualidade</span></div>
+          <div>🔥<span>Forno bem<br>quente</span></div>
+          <div>🕒<span>Fermentação<br>controlada</span></div>
+          <div>♡<span>Feito com<br>amigos</span></div>
         </div>
       </div>
     </div>
@@ -61,14 +70,14 @@
   </section>
 
   <section class="container dashboard">
-    <article class="card recipe-card">
+    <article class="card recipe-highlight">
       <div>
         <p class="tag red">ÚLTIMA RECEITA</p>
         <h2>Pizza Napolitana 65% de Hidratação</h2>
         <p>Receita base para napolitana contemporânea com borda leve, massa elástica e fermentação controlada.</p>
-        <a class="link red-link" href="receitas.html">VER RECEITA →</a>
+        <a class="arrow red-link" href="receitas.html">VER RECEITA →</a>
       </div>
-      <img src="imagens/pizza1.jpg" alt="Pizza napolitana">
+      <img src="imagens/pizza1.jpg" alt="Pizza Napolitana">
     </article>
 
     <article class="card ranking-card">
@@ -80,42 +89,42 @@
         <li><span>Dallagiovanna W280</span><strong>87/100</strong></li>
         <li><span>Anaconda Premium</span><strong>85/100</strong></li>
       </ol>
-      <a class="link gold-link" href="farinhas.html">VER RANKING COMPLETO →</a>
+      <a class="arrow gold-link" href="farinhas.html">VER RANKING COMPLETO →</a>
     </article>
 
     <article class="card tool-card">
       <p class="tag green">CALCULADORA DE MASSA</p>
       <div class="big-icon green-bg">🧮</div>
       <p>Calcule hidratação, ingredientes e peso final da massa com precisão.</p>
-      <a class="link green-link" href="calculadora.html">ABRIR CALCULADORA →</a>
+      <a class="arrow green-link" href="calculadora.html">ABRIR CALCULADORA →</a>
     </article>
 
     <article class="card tool-card">
       <p class="tag blue">TIMER DE FERMENTAÇÃO</p>
       <div class="big-icon blue-bg">🕒</div>
       <p>Cronômetros para controlar fermentação de massa e bolas.</p>
-      <a class="link blue-link" href="timer.html">ABRIR TIMER →</a>
+      <a class="arrow blue-link" href="timer.html">ABRIR TIMER →</a>
     </article>
   </section>
 
   <section class="container bottom-grid">
     <article class="card gallery-card">
-      <div class="section-head">
+      <div class="section-line">
         <h2>GALERIA DO CLUBE</h2>
         <a href="galeria.html">VER GALERIA COMPLETA →</a>
       </div>
       <div class="mini-gallery">
-        <img src="imagens/pizza2.jpg" alt="">
-        <img src="imagens/pizza3.jpg" alt="">
-        <img src="imagens/pizza4.jpg" alt="">
-        <img src="imagens/pizza5.jpg" alt="">
+        <img src="imagens/galeria1.jpg" alt="">
+        <img src="imagens/galeria2.jpg" alt="">
+        <img src="imagens/galeria3.jpg" alt="">
+        <img src="imagens/galeria4.jpg" alt="">
       </div>
     </article>
 
     <article class="card lema-card">
       <p class="tag red">NOSSO LEMA</p>
       <blockquote>Fazer pizza é compartilhar tempo, conhecimento e boas histórias.</blockquote>
-      <div class="pizza-icon">🍕</div>
+      <span class="pizza-line">🍕</span>
     </article>
   </section>
 </main>
@@ -124,10 +133,10 @@
   <div class="container footer-inner">
     <div class="footer-brand">
       <img src="imagens/logo-forno.png" alt="">
-      <span>
+      <div>
         <strong>CLUBE DA PIZZA NAPOLITANA</strong>
         <p>Massas melhores. Amigos para sempre.</p>
-      </span>
+      </div>
     </div>
     <p>Feito com ❤️ e muita farinha</p>
   </div>
