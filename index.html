@@ -1,46 +1,97 @@
 <!DOCTYPE html>
-<html lang="pt-BR" data-theme="light">
+<html lang="pt-BR" data-theme="dark">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Clube da Pizza Napolitana</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="site-header">
-    <div class="container nav-wrap">
-      <a class="logo" href="index.html">🍕 Clube Napolitano</a>
-      <button class="menu-toggle" id="menuToggle">☰</button>
-      <nav id="mainNav">
-        <a href="index.html">Início</a><a href="receitas.html">Receitas</a><a href="farinhas.html">Farinhas</a><a href="calculadora.html">Calculadora</a><a href="timer.html">Timer</a><a href="galeria.html">Galeria</a><a href="sobre.html">Sobre</a>
-        <button class="theme-btn" id="themeToggle">🌙</button>
-      </nav>
+
+<header class="topbar">
+  <div class="container nav">
+
+    <div class="logo-area">
+      <img src="imagens/logo-forno.png" alt="Logo forno">
+
+      <div>
+        <span class="logo-small">Clube da</span>
+        <h1>PIZZA <span>NAPOLITANA</span></h1>
+      </div>
     </div>
-  </header>
-  <main>
-    <section class="hero premium">
-      <div class="container hero-grid">
-        <div>
-          <p class="eyebrow">Massa • Forno • Fermentação • Amigos</p>
-          <h1>Pizza napolitana sem enrolação.</h1>
-          <p class="hero-text">Receitas, testes de farinha, hidratação, fermentação e dicas para evoluir a pizza no forno de casa ou no forno de alta temperatura.</p>
-          <div class="hero-actions"><a class="btn primary" href="receitas.html">Ver receitas</a><a class="btn secondary" href="calculadora.html">Calcular massa</a></div>
-        </div>
-        <div class="hero-card"><span class="badge">Receita base</span><h2>65% hidratação</h2><p>Boa para napolitana contemporânea com borda leve, massa elástica e fermentação controlada.</p><ul><li>Farinha forte</li><li>Fermentação longa</li><li>Forno bem quente</li></ul></div>
+
+    <nav>
+      <a class="active" href="#">INÍCIO</a>
+      <a href="#">RECEITAS</a>
+      <a href="#">FARINHAS</a>
+      <a href="#">CALCULADORA</a>
+      <a href="#">TIMER</a>
+      <a href="#">GALERIA</a>
+      <a href="#">SOBRE</a>
+    </nav>
+
+    <button id="themeToggle" class="dark-toggle">🌙 MODO ESCURO</button>
+
+  </div>
+</header>
+
+<section class="hero">
+
+  <div class="container hero-content">
+
+    <div class="hero-left">
+
+      <span class="mini-title">MASSA • FORNO • FERMENTAÇÃO • AMIGOS</span>
+
+      <h2>
+        PIZZA NAPOLITANA
+        <span>SEM ENROLAÇÃO.</span>
+      </h2>
+
+      <p>
+        Receitas, testes de farinha, hidratação, fermentação e dicas
+        para evoluir a pizza no forno de casa ou no forno de alta temperatura.
+      </p>
+
+      <div class="hero-buttons">
+        <a class="btn-primary" href="#">📖 VER RECEITAS</a>
+        <a class="btn-secondary" href="#">🧮 CALCULAR MASSA</a>
       </div>
-    </section>
-    <section class="container section">
-      <div class="section-title"><p class="eyebrow">Comece por aqui</p><h2>Áreas do clube</h2></div>
-      <div class="cards">
-        <a class="card feature" href="receitas.html"><span>📖</span><h3>Receitas em blog</h3><p>Receitas organizadas por tipo de massa, hidratação, farinha e tempo.</p></a>
-        <a class="card feature" href="farinhas.html"><span>🌾</span><h3>Ranking de farinhas</h3><p>Comparativo simples para escolher farinha sem cair em papo furado.</p></a>
-        <a class="card feature" href="calculadora.html"><span>🧮</span><h3>Calculadora</h3><p>Digite farinha, hidratação, sal e azeite. Ela calcula água e peso final.</p></a>
-        <a class="card feature" href="timer.html"><span>⏱️</span><h3>Timer</h3><p>Controle autólise, descanso, fermentação em bloco e fermentação em bola.</p></a>
-      </div>
-    </section>
-    <section class="container section split"><div class="panel dark-panel"><p class="eyebrow">Dica do forno</p><h2>Calor em cima e embaixo manda no resultado.</h2><p>Se a base queima antes da borda crescer, reduza o contato com a pedra/aço ou suba a pizza.</p></div><div class="panel"><p class="eyebrow">Filosofia do clube</p><h2>Teste, anote e repita.</h2><p>Pizza boa nasce de controle: temperatura ambiente, tempo, farinha, hidratação, ponto da massa e forno.</p></div></section>
-  </main>
-  <footer class="footer"><p>Clube da Pizza Napolitana • feito com farinha na bancada</p></footer>
-  <script src="script.js"></script>
+
+    </div>
+
+  </div>
+
+</section>
+
+<section class="quick-menu container">
+
+  <div class="quick-card">
+    <h3>🌾 FARINHAS</h3>
+    <p>Testes e ranking</p>
+  </div>
+
+  <div class="quick-card">
+    <h3>🍜 RECEITAS</h3>
+    <p>Organizadas por tipo</p>
+  </div>
+
+  <div class="quick-card">
+    <h3>🧮 FERRAMENTAS</h3>
+    <p>Calculadora e timer</p>
+  </div>
+
+  <div class="quick-card">
+    <h3>🔥 COMUNIDADE</h3>
+    <p>Amigos e pizza</p>
+  </div>
+
+</section>
+
+<footer>
+  <p>Feito com ❤️ e muita farinha</p>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
